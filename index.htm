@@ -6,6 +6,7 @@
     <meta name="author" content="John Marcus Manalo">
     <meta name="description" content="Website Portfolio">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css" integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>John Marcus Manalo</title>
 </head>
 <body>
@@ -15,6 +16,14 @@
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact Me</a>
+
+        <div class="themes">
+            <div class="modes">
+                <button onclick="myFunction()" class="theme1">
+                    <i class="ri-contrast-2-line"></i>
+                </button>
+            </div>
+        </div>
     </div>
     <div class="header">
         <div class="header-text">
@@ -62,7 +71,6 @@
                 <p>What obstacle can i help you surpass?</p>
             </div>
             <div class="form">
-                
                 <input type="text" id="email" placeholder="Your Name" required>
                 <input type="email" id="last-name" placeholder="Email" required>
                 <input type="text" id="text" required>
@@ -73,4 +81,5 @@
         </div>
     </div>
 </body>
+<script src="main.js"></script>
 </html>

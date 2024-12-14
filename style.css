@@ -14,6 +14,75 @@ body{
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     background-color: #eee;
     height: 500vh;
+    transition: 0.3s ease-in-out;
+}
+
+.themes{
+    float: right;
+    position: absolute;
+    right: 0;
+    margin-right: 60px;
+
+    button{
+        padding: 5px 20px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 20px;
+        transition: 0.3s ease-in-out;
+        border-radius: 8px;
+    }
+
+    button:hover{
+        background-color: #121212;
+        color: #eee;
+    }
+}
+
+.dark-mode{
+    background-color: #121212;
+    color: #eee;
+
+    .nav a{
+        color: #eee;
+    }
+
+    .nav a:hover{
+        color: #121212;
+        background-color: #eee;
+    }
+
+    .box{
+        color: #eee;
+    }
+
+    .header-text h2{
+        color: #eee;
+    }
+
+    .theme1{
+        color: #121212;
+        background-color: #eee;
+    }
+
+    .portfolio a{
+        color: #eee;
+    }
+
+    .portfolio a:hover{
+        color: #585858;
+    }
+
+    .submit button{
+        background-color: #eee;
+        color: #121212;
+    }
+
+    .submit button:hover{
+        background-color: #121212;
+        color: #eee;
+        box-shadow: 0px 0px 10px #eee;
+    }
 }
 
 .header-text{
@@ -132,7 +201,7 @@ body{
 
 #portfolio{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .portfolio a{
@@ -158,7 +227,7 @@ body{
 
 #about{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .about-wrapper{
@@ -177,7 +246,7 @@ body{
 
 #services{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .services-wrapper{
@@ -203,12 +272,12 @@ h1{
 
 #contact{
     height: 100vh;
-    width: 100vh;
+    width: 100%;
 }
 
 .contact-wrapper{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,7 +293,7 @@ h1{
 
 input{
     padding: 8px 12px;
-    min-width: 300px;
+    min-width: 280px;
     margin: 5px 20px;
     font-size: 20px;
     border-radius: 8px;
@@ -260,9 +329,14 @@ label{
 .submit button:hover{
     color: #121212;
     background-color: #eee;
+    box-shadow: 0px 0px 18px #121212;
 }
 
 .choices{
     margin-bottom: 90px;
 }
 
+.buttons button{
+    padding: 4px 16px;
+    font-size: 18px;
+}
