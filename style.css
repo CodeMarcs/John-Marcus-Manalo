@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    background-color: #eee;
+    height: 500vh;
+}
+
+.header-text{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color:  #121212;
+}
+
+.header-text h2{
+    text-align: center;
+    font-size: 60px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.box{
+    font-size: 32px;
+    font-weight: normal;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.nav a{
+    margin: 20px 18px;
+    color: #121212;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 20px;
+    transition: 0.2s ease-in-out;
+    border-radius: 8px;
+}
+
+.nav a:hover{
+    background: #121212;
+    color: #eee;
+}
+
+.b1{
+    animation: ani1 15s infinite;
+}
+
+.b2{
+    animation: ani2 15s infinite;
+}
+
+.b3{
+    animation: ani3 15s infinite;
+}
+
+.b4{
+    animation: ani4 15s infinite;
+}
+
+@keyframes ani1{
+    
+    0%{
+        opacity: 0;
+    }
+    
+    15%{
+        opacity: 1;
+    }
+
+    30%{
+        opacity: 0;
+    }
+}
+
+@keyframes ani2{
+    
+    30%{
+        opacity: 0;
+    }
+    
+    45%{
+        opacity: 1;
+    }
+
+    60%{
+        opacity: 0;
+    }
+}
+
+@keyframes ani3{
+    
+    60%{
+        opacity: 0;
+    }
+    
+    80%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+#portfolio{
+    height: 100vh;
+    width: 100vw;
+}
+
+.portfolio a{
+    color: #121212;
+    text-decoration: none;
+    font-size: 30px;
+    display: flex;
+    margin: 50px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.portfolio a:hover{
+    color: #cbcbcb;
+    padding: 0px 20px;
+}
+
+.portfolio-wrapper{
+    width: 100%;
+    height: 100vh;
+    margin-top: 100vh;
+    padding: 300px 20px;
+}
+
+#about{
+    height: 100vh;
+    width: 100vw;
+}
+
+.about-wrapper{
+    padding: 300px 20px;
+    pointer-events: none;
+}
+
+.about h1{
+    font-size: 60px;
+}
+
+.about span{
+    font-size: 28px;
+    display: flex;
+}
+
+#services{
+    height: 100vh;
+    width: 100vw;
+}
+
+.services-wrapper{
+    padding: 300px 20px;
+}
+
+.services ul, li{
+    list-style-type: square;
+    font-size: 24px;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.services li:hover{
+    padding: 5px 30px;
+    color: #b6b6b6;
+}
+
+h1{
+    font-size: 40px;
+}
+
+#contact{
+    height: 100vh;
+    width: 100vh;
+}
+
+.contact-wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    padding: 8px 12px;
+    min-width: 300px;
+    margin: 5px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus{
+    padding: 8px 16px;
+}
+
+label{
+    padding: 8px 0;
+}
+
+.contact-wrapper h3{
+    font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+.submit button{
+    padding: 12px 28px;
+    font-size: 17px;
+    margin: 70px 0px;
+    background-color: #121212;
+    border-radius: 7px;
+    color: #eee;
+    font-family: 'Inter';
+    transition: 0.4s ease-in-out;
+}   
+
+.submit button:hover{
+    color: #121212;
+    background-color: #eee;
+}
+
+.choices{
+    margin-bottom: 90px;
+}
+
